@@ -42,7 +42,6 @@ export default {
         this.loading = true;
         const res = await fetch('https://randomuser.me/api/?results=50', {
         })
-        debugger
         const data = await res.json()
         return data.results
       } catch (e) {
