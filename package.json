@@ -1,14 +1,18 @@
 {
   "name": "cards-scroll",
   "private": true,
+  "homepage": "https://vladimirgromyko.github.io/cards-scroll/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
