@@ -1,29 +1,29 @@
 <template>
   <div
-      ref="scrollContainer"
-      class="container"
-      @wheel="handleScroll"
+    ref="scrollContainer"
+    class="container"
+    @wheel="handleScroll"
   >
     <div
-        v-for="item in items"
-        :key="item.id.value"
-        class="item"
+      v-for="item in items"
+      :key="item.id.value"
+      class="item"
     >
-      <Card :item="item"/>
+      <card-component :item="item" />
     </div>
     <div v-if="loading">
-      <Loader />
+      <loader-component />
     </div>
   </div>
 </template>
 
 <script>
-import Card from "./components/Сard.vue";
-import Loader from "./components/Loader.vue";
+import CardComponent from "./components/Сard.vue";
+import LoaderComponent from "./components/Loader.vue";
 
 const portion = 10
 export default {
-  components: {Card, Loader},
+  components: {CardComponent, LoaderComponent},
   data() {
     return {
       items: [],

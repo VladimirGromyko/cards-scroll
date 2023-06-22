@@ -1,10 +1,10 @@
 <template>
-  <div className="loader"></div>
+  <div class="loader" />
 </template>
 
 <script>
 export default {
-  name: "Loader"
+  name: "LoaderComponent"
 }
 </script>
 
